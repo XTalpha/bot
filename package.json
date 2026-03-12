@@ -1,0 +1,15 @@
+{
+  "name": "telegram-image-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for AI image generation using Cloudflare Workers AI",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "set-token": "wrangler secret put TELEGRAM_BOT_TOKEN",
+    "set-webhook": "node scripts/set-webhook.js"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
